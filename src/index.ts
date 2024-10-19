@@ -1,6 +1,7 @@
 import express from 'express';
 import session from 'express-session';
-import helmet from 'helmet';
+// import helmet from 'helmet';
+const helmet = require("helmet")
 import rateLimit from 'express-rate-limit';
 import crypto from 'crypto';
 // import authRoutes from './routes/auth';

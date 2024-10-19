@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": false // Skip type checking all .d.ts files.
+  },
+  "include": [
+    "src/**/*.ts", // Include all TypeScript files in the src directory
+    "src/types/**/*.d.ts" // Include custom type definitions
+  ],
+  "exclude": [
+    "node_modules", // Exclude the node_modules directory
+    "**/*.spec.ts" // Optionally exclude test files
+  ],
+  "typeRoots": ["./node_modules/@types", "src/types"]
+}

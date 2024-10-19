@@ -8,8 +8,8 @@ const router = express.Router();
 router.post('/register', register);
 router.post('/login', login);
 router.post('/logout', logout);
-router.get('/protected', protect, (req, res) => {
-  res.json({ message: 'This is a protected route', user: req.session.userId });
-});
+// router.get('/protected', protect, (req, res) => {
+//   res.json({ message: 'This is a protected route', user: req.session.userId });
+// });
 
 export default router;
